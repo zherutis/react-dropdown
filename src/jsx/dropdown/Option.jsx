@@ -1,6 +1,6 @@
 'use strict'
 var React = require('react'),
-    htmlEscape = require('../helpers/htmlEscape');
+    htmlEscape = require('lodash').escape;
 
 module.exports = React.createClass({
   handleChange: function() {
@@ -24,7 +24,7 @@ module.exports = React.createClass({
   */
   createChild: function() {
     var {text, query} = this.props,
-        text = htmlEscape(text),        
+        text = htmlEscape(text),
         html = text;
 
     if (query) {
