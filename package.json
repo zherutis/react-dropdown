@@ -1,0 +1,27 @@
+{
+  "name": "dropdown",
+  "version": "1.0.0",
+  "description": "A HTML select substitution with search written in React",
+  "main": "bundle.js",
+  "dependencies": {
+    "jsx-loader": "^0.13.2",
+    "lodash": "^3.10.1",
+    "react": "^0.13.3",
+    "react-onclickoutside": "^0.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3",
+    "http-server": "^0.8.0",
+    "webpack": "^1.10.5",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server ./public -p 8080",
+    "dev": "webpack-dev-server --progress --colors --port 8090"
+  },
+  "author": "Roman Stepanenko",
+  "license": "ISC"
+}
